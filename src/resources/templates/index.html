@@ -1,5 +1,7 @@
 <html>
     <body>
-        <a th:each="action : ${actions}" th:href="${action}" th:text="${action}"></a>
+        <p th:each="action : ${actions}">
+            <a th:href="${action}" th:text="${action}"></a>
+        </p>
     </body>
 </html>
