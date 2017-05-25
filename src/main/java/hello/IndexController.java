@@ -15,6 +15,7 @@ public class IndexController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
         String[] actions = new String[] {
+                "/detect-device",
                 "/rest/service/greeting",
         };
         model.addAttribute("actions", actions);
