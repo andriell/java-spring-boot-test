@@ -1,5 +1,5 @@
 <html>
     <body>
-        <a href="/rest/service/greeting">/rest/service/greeting</a>
+        <a th:each="action : ${actions}" th:href="${action}" th:text="${action}"></a>
     </body>
 </html>
